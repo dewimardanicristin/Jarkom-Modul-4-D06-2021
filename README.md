@@ -59,7 +59,7 @@ iface eth0 inet static
 	address 10.24.27.162
 	netmask 255.255.255.252
 ```
-### Melakukan Routing
+### Melakukan Routing (di GNS3)
 - Foosha
 ```
 route add -net 10.24.16.0 netmask 255.255.252.0 gw 10.24.27.146
@@ -112,4 +112,40 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.145
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.149
 ```
 ## CIDR 
+### Menentukan Subnet pada Topologi
+
+![image](https://user-images.githubusercontent.com/58657135/143676579-b9397b7d-d158-41a6-b161-db906b9c20d9.png)
+
+### Melakukan Penggabungan Subnet (Metode Subnet)
+
+![image](https://user-images.githubusercontent.com/58657135/143676622-fd461589-4760-441f-9791-e30df413d3d8.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143676638-fa5af513-25aa-4ce5-bdd9-64f0bb914ea8.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143676649-5bfc8826-dcb0-47e8-9b37-cbd7bc1cdfe0.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143676671-a4c117e3-960e-40ca-9231-d4c536aefd05.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143676702-0b83de35-59fb-402f-b806-51c6bcb486c1.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143676712-d1565458-4699-48d5-a3f7-c5f5ed51f640.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143676720-19bf302c-c0d1-4ca6-9072-5e7a4b568a16.png)
+
+### Menghitung NID
+Kemudian dihitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon serta melakukan subnetting dengan menggunakan pohon tersebut untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada:
+
+![image](https://user-images.githubusercontent.com/58657135/143676765-51bd1048-3a7c-4454-a248-c610c179db19.png)
+
+Akan didapatkan pembagian IP sebagai berikut:
+
+![image](https://user-images.githubusercontent.com/58657135/143677503-4f74ec43-f169-497f-b0fc-5b59ddf15b53.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143677508-3e5615b2-8a69-4792-8720-a98ded3fe14b.png)
+
+![image](https://user-images.githubusercontent.com/58657135/143677514-11c672ee-d48f-425c-b440-d6c9e6cf9d8b.png)
+
+
+
+
 
