@@ -12,9 +12,9 @@ Anggota :
 <img width="548" alt="image" src="https://user-images.githubusercontent.com/81247727/143670528-87516f75-9f8d-4ba9-b78a-362c601f6a6f.png">
 
 ### Menentukan jumlah IP dan netmask pada setiap subnet
-Didapatkan 15 subnet dengan total jumlah IP sebanyak 5847 dengan netmask /19:
+Didapatkan 15 subnet dengan total jumlah IP sebanyak 5851 dengan netmask /19:
 
-<img width="272" alt="image" src="https://user-images.githubusercontent.com/81247727/143670071-0d9f75c6-7d2f-4d75-859a-fad34f55b6f6.png">
+<img width="275" alt="image" src="https://user-images.githubusercontent.com/81247727/143671319-a4f48e22-3413-4e59-a7b0-913f8cf92b99.png">
 
 ### Menghitung NID
 Kemudian dihitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon serta melakukan subnetting dengan menggunakan pohon tersebut untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada
