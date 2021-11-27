@@ -19,7 +19,8 @@ Didapatkan 15 subnet dengan total jumlah IP sebanyak 5851 dengan netmask /19:
 ### Menghitung NID
 Kemudian dihitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon serta melakukan subnetting dengan menggunakan pohon tersebut untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada
 
-<img width="520" alt="image" src="https://user-images.githubusercontent.com/81247727/143670171-4c6f1f96-c3cc-41d7-b5af-80bc35caf7b7.png">
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/73428220/143673974-70d007fe-ebb6-4ec6-b694-32beb5a977a9.png)
+
 
 Akan didapatkan pembagian IP sebagai berikut:
 
@@ -43,6 +44,20 @@ auto eth2
 iface eth2 inet static
 	address 10.24.16.1
 	netmask 255.255.252.0
+```
+- Pada Cipher
+```
+auto eth0
+iface eth0 inet static
+	address 10.24.16.2
+	netmask 255.255.252.0
+```
+- Pada Doriki
+```
+auto eth0
+iface eth0 inet static
+	address 10.24.27.162
+	netmask 255.255.255.252
 ```
 ### Melakukan Routing
 
