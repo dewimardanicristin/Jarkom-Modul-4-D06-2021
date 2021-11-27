@@ -145,7 +145,37 @@ Akan didapatkan pembagian IP sebagai berikut:
 
 ![image](https://user-images.githubusercontent.com/58657135/143677514-11c672ee-d48f-425c-b440-d6c9e6cf9d8b.png)
 
+### Routing pada CIDR (CPT)
+Berikut adalah setting routing pada router pada CPT:
+- Pada Foosha:
+ 
+![image](https://user-images.githubusercontent.com/58657135/143680090-4bcb0d7b-31fa-4086-a8af-3d40912338d4.png)
 
+- Pada Guanhao:
+
+![image](https://user-images.githubusercontent.com/58657135/143681361-33a43a73-abed-49bc-8a7c-fde05cae9431.png)
+
+- Pada OIMO:
+
+![image](https://user-images.githubusercontent.com/58657135/143681396-a5d903e5-c07c-44cd-9f61-53eab574d3c7.png)
+
+- Pada Seastone:
+
+![image](https://user-images.githubusercontent.com/58657135/143681424-aeb9809d-e62d-4b22-8a98-3fbfbbb5f0a8.png)
+
+- Pada Alabasta:
+
+![image](https://user-images.githubusercontent.com/58657135/143681448-fe9b4e05-d96d-417b-a221-edd4a9d9de24.png)
+
+- Pada Water7:
+
+![image](https://user-images.githubusercontent.com/58657135/143681787-59d737f3-1ba9-499b-8511-b3999797d4e2.png)
+
+- Pada Pucci:
+
+![image](https://user-images.githubusercontent.com/58657135/143681812-2472b6ad-2ca0-42d4-ada5-799980e7e285.png)
+
+Dapat dilihat bahwa Teknik CIDR lebih efisien dalam routing karena hanya sedikit yang dirouting daripada teknik VLSM namun tentu saja CIDR juga menyediakan Usable IP lebih banyak dari pada VLSM dimana pada kasus ini VLSM menggunakan Subnet /19 dan CIDR menggunakan Subnet /15 (lebih banyak usable IP pada CIDR). 
 
 
 
