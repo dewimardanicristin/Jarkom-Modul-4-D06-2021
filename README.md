@@ -7,14 +7,16 @@ Anggota :
 - Dewi Mardani 05111940000225
 
 ## VLSM
-### Menghitung NID
+### Menentukan subnet pada topologi
 
-<img width="548" alt="image" src="https://user-images.githubusercontent.com/81247727/143670041-e0e4dfd0-4334-4f67-b353-f1c3e9261d6f.png">
+<img width="548" alt="image" src="https://user-images.githubusercontent.com/81247727/143670528-87516f75-9f8d-4ba9-b78a-362c601f6a6f.png">
 
+### Menentukan jumlah IP dan netmask pada setiap subnet
 Didapatkan 15 subnet dengan total jumlah IP sebanyak 5847 dengan netmask /19:
 
 <img width="272" alt="image" src="https://user-images.githubusercontent.com/81247727/143670071-0d9f75c6-7d2f-4d75-859a-fad34f55b6f6.png">
 
+### Menghitung NID
 Kemudian dihitung pembagian IP berdasarkan NID dan netmask tersebut menggunakan pohon serta melakukan subnetting dengan menggunakan pohon tersebut untuk pembagian IP sesuai dengan kebutuhan masing-masing subnet yang ada
 
 <img width="520" alt="image" src="https://user-images.githubusercontent.com/81247727/143670171-4c6f1f96-c3cc-41d7-b5af-80bc35caf7b7.png">
@@ -43,4 +45,6 @@ iface eth2 inet static
 	netmask 255.255.252.0
 ```
 ### Melakukan Routing
+
+## CIDR 
 
