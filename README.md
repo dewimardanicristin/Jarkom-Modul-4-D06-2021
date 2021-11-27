@@ -111,6 +111,19 @@ route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.145
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.149
 ```
+
+### Pengaturan Iptables
+Agar semua bisa mengakses internet eksternal, maka pada router foosha dijalankan command berikut:
+```
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.24.0.0/19
+```
+
+### Pengaturan nameserver
+Untuk semua node (kecuali switch) jalankan command berikut:
+```
+echo 'nameserver 192.168.122.1' > /etc/resolv.conf #IP_DNS
+```
+
 ## CIDR 
 ### Menentukan Subnet pada Topologi
 
@@ -176,6 +189,5 @@ Berikut adalah setting routing pada router pada CPT:
 ![image](https://user-images.githubusercontent.com/58657135/143681812-2472b6ad-2ca0-42d4-ada5-799980e7e285.png)
 
 Dapat dilihat bahwa Teknik CIDR lebih efisien dalam routing karena hanya sedikit yang dirouting daripada teknik VLSM namun tentu saja CIDR juga menyediakan Usable IP lebih banyak dari pada VLSM dimana pada kasus ini VLSM menggunakan Subnet /19 dan CIDR menggunakan Subnet /15 (lebih banyak usable IP pada CIDR). 
-
 
 
