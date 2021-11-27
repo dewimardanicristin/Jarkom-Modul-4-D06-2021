@@ -60,6 +60,56 @@ iface eth0 inet static
 	netmask 255.255.255.252
 ```
 ### Melakukan Routing
+- Foosha
+```
+route add -net 10.24.16.0 netmask 255.255.252.0 gw 10.24.27.146
+route add -net 10.24.27.148 netmask 255.255.255.252 gw 10.24.27.146
+route add -net 10.24.27.0 netmask 255.255.255.128 gw 10.24.27.146
+route add -net 10.24.0.0 netmask 255.255.248.0 gw 10.24.27.146
 
+route add -net 10.24.24.0 netmask 255.255.254.0 gw 10.24.27.154
+route add -net 10.24.20.0 netmask 255.255.252.0 gw 10.24.27.154
+route add -net 10.24.27.128 netmask 255.255.255.240 gw 10.24.27.154
+route add -net 10.24.27.156 netmask 255.255.255.252 gw 10.24.27.154
+route add -net 10.24.26.0 netmask 255.255.255.0 gw 10.24.27.154
+route add -net 10.24.12.0 netmask 255.255.252.0 gw 10.24.27.154
+route add -net 10.24.27.164 netmask 255.255.255.252 gw 10.24.27.154
+```
+- Guanhao
+```
+route add -net 10.24.27.128 netmask 255.255.255.240 gw 10.24.24.3
+route add -net 10.24.26.0 netmask 255.255.255.0 gw 10.24.27.158
+route add -net 10.24.12.0 netmask 255.255.252.0 gw 10.24.27.158
+route add -net 10.24.27.164 netmask 255.255.255.252 gw 10.24.27.158
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.153
+```
+
+- Alabasta
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.24.1
+```
+
+- OIMO
+```
+route add -net 10.24.12.0 netmask 255.255.252.0 gw 10.24.26.3
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.157
+```
+
+- Seastone
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.26.1
+```
+
+- Water7
+```
+route add -net 10.24.27.0 netmask 255.255.255.128 gw 10.24.27.150
+route add -net 10.24.0.0 netmask 255.255.248.0 gw 10.24.27.150
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.145
+```
+
+- Pucci
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.24.27.149
+```
 ## CIDR 
 
